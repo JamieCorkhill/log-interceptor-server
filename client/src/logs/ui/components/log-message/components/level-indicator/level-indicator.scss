@@ -1,0 +1,9 @@
+.logLevelIndicator {
+    --dimensions: 1.6rem;
+
+    border-radius: 50%;
+    height: var(--dimensions);
+    width: var(--dimensions);
+    
+    background-color: var(--color-blue);
+}

@@ -1,0 +1,7 @@
+@import './../../../../styles/base/mixins';
+
+.container {
+    display: flex;
+
+    @include spaceHorizontally();
+}
