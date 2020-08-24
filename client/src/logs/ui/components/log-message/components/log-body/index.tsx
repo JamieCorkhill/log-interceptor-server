@@ -1,9 +1,9 @@
 import React from 'react';
 
 import { LogLevel } from '../../../../../../common/level';
+import { JsonView } from '../json-view';
 
 import logTextStyles from './log-text.scss'
-import { JsonView } from '../json-view';
 
 interface ILogTextProps {
     level: LogLevel;

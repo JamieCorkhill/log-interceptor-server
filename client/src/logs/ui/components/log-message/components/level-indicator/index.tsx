@@ -1,7 +1,8 @@
 import React from 'react';
 
-import styles from './level-indicator.scss';
 import { LogLevel } from '../../../../../../common/level';
+
+import styles from './level-indicator.scss';
 
 interface IProps {
     level: LogLevel;
