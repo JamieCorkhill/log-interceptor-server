@@ -4,6 +4,7 @@ import { LogLevel } from '../../../../../../common/level';
 import { JsonView } from '../json-view';
 
 import logTextStyles from './log-text.scss'
+import { Metadata } from '../metadata';
 
 interface ILogTextProps {
     level: LogLevel;
@@ -36,6 +37,7 @@ export const LogBody: React.FC<ILogBodyProps> = (props) => {
                 text={props.text}
             />
             <JsonView json={json}/>
+            <Metadata/>
         </div>
     );
 };
