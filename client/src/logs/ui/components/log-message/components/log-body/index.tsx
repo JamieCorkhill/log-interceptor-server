@@ -16,6 +16,13 @@ const LogText: React.FC<ILogTextProps> = (props) => {
     );
 };
 
+const json = `
+{
+  "clusterId": "an-id",
+  "ackWait": "5s"
+}
+`;
+
 interface ILogBodyProps {
     level: LogLevel;
     text: string;
@@ -28,7 +35,7 @@ export const LogBody: React.FC<ILogBodyProps> = (props) => {
                 level={props.level}
                 text={props.text}
             />
-            <JsonView/>
+            <JsonView json={json}/>
         </div>
     );
 };
